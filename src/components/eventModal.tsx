@@ -1,5 +1,9 @@
 // @ts-nocheck
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import TrimbleMaps from "@trimblemaps/trimblemaps-js";
+import SingleSearch from "@trimblemaps/trimblemaps-singlesearch";
+
+TrimbleMaps.APIKey = "1D173DB111F3D2408D3F53337D404F3F";
 
 const EventModal = ({ onClose, eventData = {} }) => {
   const [event, setEventData] = useState(eventData);
@@ -12,8 +16,97 @@ const EventModal = ({ onClose, eventData = {} }) => {
     } else {
       updatedEvent[id] = e.target.checked;
     }
-    setEventData(updatedEvent);
+    setEventData({...updatedEvent});
   };
+
+  const saveLocation = (location) => {
+    setEventData({ ...event, location });
+  };
+
+  useEffect(() => {
+    let map = new TrimbleMaps.Map({
+      container: "map",
+      zoom: 12.5,
+      center: event.location
+        ? new TrimbleMaps.LngLat(
+            event.location.Coords.Lat,
+            event.location.Coords.Lon
+          )
+        : new TrimbleMaps.LngLat(-77.01866, 38.888),
+    });
+
+    let ctrl = new SingleSearch({
+      placeholderText: "Search here",
+      doneTypingInterval: 700,
+      hideResults: true,
+      minSearchTextLength: 3,
+      locationRelevance: "mapCenter",
+      searchOption: {
+        region: TrimbleMaps.Common.Region.WW,
+        maxResults: 10,
+      },
+      markerStyle: {
+        graphicHeight: 26,
+        graphicWidth: 26,
+        graphicXOffset: -13,
+        graphicYOffset: -13,
+      },
+      markerConfig: {
+        exclusive: true,
+        centerOnMap: true,
+        zoomLevel: 12,
+      },
+      popupConfig: {
+        offset: 15,
+        show: true,
+        className: "single-search",
+        closeBox: true,
+      },
+      // Include other optional customization options
+    });
+    
+    ctrl.on("locationselected", (evt) => {
+      // The `location` property of the event contains the location data of the
+      // search result selected by the user.
+      console.log(evt.location);
+      saveLocation(evt.location);
+    });
+    map.addControl(ctrl, "top-left");
+    if(event.location) {
+        var marker = new TrimbleMaps.Marker()
+          .setLngLat([event.location.Coords.Lat, event.location.Coords.Lon])
+          .addTo(map);
+          var markerHeight = 35,
+            markerRadius = 10,
+            linearOffset = 15;
+          var popupOffsets = {
+            top: [0, 0],
+            "top-left": [0, 0],
+            "top-right": [0, 0],
+            bottom: [0, -markerHeight],
+            "bottom-left": [
+              linearOffset,
+              (markerHeight - markerRadius + linearOffset) * -1,
+            ],
+            "bottom-right": [
+              -linearOffset,
+              (markerHeight - markerRadius + linearOffset) * -1,
+            ],
+            left: [markerRadius, (markerHeight - markerRadius) * -1],
+            right: [-markerRadius, (markerHeight - markerRadius) * -1],
+          };
+          var popup = new TrimbleMaps.Popup({ offset: popupOffsets })
+            .setLngLat([event.location.Coords.Lat, event.location.Coords.Lon])
+            .setHTML(`<span>${event.location.ShortString}</span>`)
+            .setMaxWidth("300px")
+            .addTo(map);
+    }
+
+    return (() => {
+      map = null;
+      ctrl = null;
+    })
+  }, []);
 
   return (
     <div className="modal is-active">
@@ -106,35 +199,47 @@ const EventModal = ({ onClose, eventData = {} }) => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="field">
-            <label className="checkbox">
-              <input
-                type="checkbox"
-                id="allDay"
-                value={event.allDay}
-                onChange={onChange}
-              />
-              All day
-            </label>
-          </div>
-          <div className="field">
-            <label className="label">Color</label>
-            <div className="select is-primary">
-              <select id="color" onChange={onChange} value={event.color}>
-                <option value="">Select</option>
-                <option value="red">Red</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-                <option value="grey">Grey</option>
-                <option value="voilet">Voilet</option>
-              </select>
+            <div className="column" style={{ alignSelf: "center" }}>
+              <div className="field">
+                <label className="checkbox">
+                  <input
+                    type="checkbox"
+                    id="allDay"
+                    value={event.allDay}
+                    onChange={onChange}
+                  />
+                  All day
+                </label>
+              </div>
+            </div>
+            <div className="column">
+              <div className="field">
+                <label className="label">Color</label>
+                <div className="select is-primary">
+                  <select id="color" onChange={onChange} value={event.color}>
+                    <option value="">Select</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="grey">Grey</option>
+                    <option value="voilet">Voilet</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
+          <div className="field">
+            <label className="label">Location</label>
+            <div className="control">
+              <div id="map" style={{ width: "100%", height: "200px" }}></div>
+            </div>
+          </div>
+
           <div className="field">
             <label className="label">Description</label>
             <div className="control">
               <textarea
+                rows={2}
                 id="description"
                 className="textarea"
                 placeholder="Description"
