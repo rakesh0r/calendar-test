@@ -1,0 +1,8 @@
+.DS_Store
+
+# Javascript
+node_modules
+
+# Python
+venv
+__pycache__

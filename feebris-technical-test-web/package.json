@@ -1,0 +1,23 @@
+{
+  "name": "feebris-technical-task",
+  "version": "1.0.0",
+  "description": "The Feebris technical task",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "jest"
+  },
+  "author": "James Andres <james@feebris.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^3.7.0",
+    "chartjs-adapter-moment": "^1.0.0",
+    "chartjs-node-canvas": "^4.1.6",
+    "express": "^4.17.1",
+    "hbs": "^4.2.0",
+    "jest": "^26.5.3",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^5.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+<html>
+<head>
+    <style>
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="padding:20px">
+        <div class="card card-body bg-light">
+            <h1>{{title}}: {{patient.firstName}} {{patient.lastName}}</h1>
+            {{#if checkUpData}}
+                Checkup Date: {{checkUpData.createdDate}}
+            {{/if}}
+            <hr />
+            {{#if checkUpData.pulseOximeterData}}
+                <img src="/checkups_chart.png" />
+            {{else}}
+                <p>pulse data not found.</p>
+            {{/if}}
+        </div>
+    </div>
+</body>
+</html>

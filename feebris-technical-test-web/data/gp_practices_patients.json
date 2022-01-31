@@ -1,0 +1,634 @@
+[
+  {
+    "patientId": 20,
+    "gpPracticeId": 6
+  },
+  {
+    "patientId": 99,
+    "gpPracticeId": 15
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 35
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 147
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 104
+  },
+  {
+    "patientId": 94,
+    "gpPracticeId": 14
+  },
+  {
+    "gpPracticeId": 14,
+    "patientId": 98
+  },
+  {
+    "patientId": 124,
+    "gpPracticeId": 19
+  },
+  {
+    "gpPracticeId": 10,
+    "patientId": 58
+  },
+  {
+    "gpPracticeId": 1,
+    "patientId": 3
+  },
+  {
+    "patientId": 34,
+    "gpPracticeId": 3
+  },
+  {
+    "gpPracticeId": 1,
+    "patientId": 2
+  },
+  {
+    "patientId": 150,
+    "gpPracticeId": 21
+  },
+  {
+    "patientId": 105,
+    "gpPracticeId": 15
+  },
+  {
+    "gpPracticeId": 6,
+    "patientId": 28
+  },
+  {
+    "gpPracticeId": 7,
+    "patientId": 36
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 106
+  },
+  {
+    "patientId": 79,
+    "gpPracticeId": 13
+  },
+  {
+    "patientId": 97,
+    "gpPracticeId": 14
+  },
+  {
+    "patientId": 29,
+    "gpPracticeId": 7
+  },
+  {
+    "patientId": 90,
+    "gpPracticeId": 18
+  },
+  {
+    "patientId": 15,
+    "gpPracticeId": 3
+  },
+  {
+    "patientId": 134,
+    "gpPracticeId": 20
+  },
+  {
+    "gpPracticeId": 4,
+    "patientId": 50
+  },
+  {
+    "patientId": 77,
+    "gpPracticeId": 13
+  },
+  {
+    "patientId": 116,
+    "gpPracticeId": 16
+  },
+  {
+    "gpPracticeId": 17,
+    "patientId": 119
+  },
+  {
+    "gpPracticeId": 6,
+    "patientId": 24
+  },
+  {
+    "gpPracticeId": 18,
+    "patientId": 120
+  },
+  {
+    "patientId": 110,
+    "gpPracticeId": 15
+  },
+  {
+    "gpPracticeId": 4,
+    "patientId": 17
+  },
+  {
+    "gpPracticeId": 20,
+    "patientId": 132
+  },
+  {
+    "gpPracticeId": 2,
+    "patientId": 13
+  },
+  {
+    "patientId": 66,
+    "gpPracticeId": 7
+  },
+  {
+    "patientId": 136,
+    "gpPracticeId": 20
+  },
+  {
+    "patientId": 73,
+    "gpPracticeId": 12
+  },
+  {
+    "gpPracticeId": 10,
+    "patientId": 59
+  },
+  {
+    "patientId": 129,
+    "gpPracticeId": 20
+  },
+  {
+    "gpPracticeId": 13,
+    "patientId": 81
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 146
+  },
+  {
+    "gpPracticeId": 10,
+    "patientId": 67
+  },
+  {
+    "gpPracticeId": 16,
+    "patientId": 118
+  },
+  {
+    "gpPracticeId": 2,
+    "patientId": 25
+  },
+  {
+    "patientId": 122,
+    "gpPracticeId": 19
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 148
+  },
+  {
+    "patientId": 6,
+    "gpPracticeId": 2
+  },
+  {
+    "patientId": 139,
+    "gpPracticeId": 21
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 109
+  },
+  {
+    "patientId": 47,
+    "gpPracticeId": 9
+  },
+  {
+    "gpPracticeId": 7,
+    "patientId": 35
+  },
+  {
+    "patientId": 125,
+    "gpPracticeId": 20
+  },
+  {
+    "gpPracticeId": 2,
+    "patientId": 14
+  },
+  {
+    "patientId": 145,
+    "gpPracticeId": 21
+  },
+  {
+    "patientId": 133,
+    "gpPracticeId": 20
+  },
+  {
+    "patientId": 60,
+    "gpPracticeId": 10
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 143
+  },
+  {
+    "patientId": 92,
+    "gpPracticeId": 14
+  },
+  {
+    "gpPracticeId": 13,
+    "patientId": 80
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 108
+  },
+  {
+    "gpPracticeId": 5,
+    "patientId": 19
+  },
+  {
+    "patientId": 90,
+    "gpPracticeId": 14
+  },
+  {
+    "patientId": 44,
+    "gpPracticeId": 9
+  },
+  {
+    "patientId": 32,
+    "gpPracticeId": 7
+  },
+  {
+    "gpPracticeId": 16,
+    "patientId": 115
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 149
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 101
+  },
+  {
+    "patientId": 26,
+    "gpPracticeId": 6
+  },
+  {
+    "gpPracticeId": 6,
+    "patientId": 25
+  },
+  {
+    "patientId": 126,
+    "gpPracticeId": 20
+  },
+  {
+    "gpPracticeId": 10,
+    "patientId": 64
+  },
+  {
+    "patientId": 83,
+    "gpPracticeId": 13
+  },
+  {
+    "patientId": 131,
+    "gpPracticeId": 20
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 100
+  },
+  {
+    "patientId": 123,
+    "gpPracticeId": 19
+  },
+  {
+    "gpPracticeId": 9,
+    "patientId": 48
+  },
+  {
+    "gpPracticeId": 14,
+    "patientId": 93
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 142
+  },
+  {
+    "patientId": 46,
+    "gpPracticeId": 9
+  },
+  {
+    "patientId": 66,
+    "gpPracticeId": 10
+  },
+  {
+    "gpPracticeId": 6,
+    "patientId": 23
+  },
+  {
+    "gpPracticeId": 9,
+    "patientId": 53
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 137
+  },
+  {
+    "patientId": 54,
+    "gpPracticeId": 9
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 111
+  },
+  {
+    "patientId": 38,
+    "gpPracticeId": 7
+  },
+  {
+    "gpPracticeId": 12,
+    "patientId": 75
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 141
+  },
+  {
+    "gpPracticeId": 2,
+    "patientId": 7
+  },
+  {
+    "patientId": 85,
+    "gpPracticeId": 13
+  },
+  {
+    "patientId": 128,
+    "gpPracticeId": 20
+  },
+  {
+    "patientId": 43,
+    "gpPracticeId": 8
+  },
+  {
+    "patientId": 50,
+    "gpPracticeId": 9
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 140
+  },
+  {
+    "patientId": 41,
+    "gpPracticeId": 8
+  },
+  {
+    "gpPracticeId": 10,
+    "patientId": 68
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 132
+  },
+  {
+    "gpPracticeId": 8,
+    "patientId": 42
+  },
+  {
+    "gpPracticeId": 2,
+    "patientId": 8
+  },
+  {
+    "patientId": 72,
+    "gpPracticeId": 12
+  },
+  {
+    "patientId": 135,
+    "gpPracticeId": 20
+  },
+  {
+    "patientId": 51,
+    "gpPracticeId": 9
+  },
+  {
+    "patientId": 39,
+    "gpPracticeId": 7
+  },
+  {
+    "gpPracticeId": 4,
+    "patientId": 18
+  },
+  {
+    "patientId": 96,
+    "gpPracticeId": 14
+  },
+  {
+    "gpPracticeId": 11,
+    "patientId": 69
+  },
+  {
+    "patientId": 100,
+    "gpPracticeId": 19
+  },
+  {
+    "patientId": 4,
+    "gpPracticeId": 1
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 107
+  },
+  {
+    "patientId": 134,
+    "gpPracticeId": 7
+  },
+  {
+    "patientId": 88,
+    "gpPracticeId": 10
+  },
+  {
+    "gpPracticeId": 19,
+    "patientId": 121
+  },
+  {
+    "gpPracticeId": 10,
+    "patientId": 61
+  },
+  {
+    "gpPracticeId": 1,
+    "patientId": 1
+  },
+  {
+    "patientId": 11,
+    "gpPracticeId": 2
+  },
+  {
+    "gpPracticeId": 16,
+    "patientId": 117
+  },
+  {
+    "patientId": 12,
+    "gpPracticeId": 2
+  },
+  {
+    "patientId": 5,
+    "gpPracticeId": 2
+  },
+  {
+    "gpPracticeId": 13,
+    "patientId": 87
+  },
+  {
+    "gpPracticeId": 11,
+    "patientId": 98
+  },
+  {
+    "gpPracticeId": 18,
+    "patientId": 1
+  },
+  {
+    "patientId": 22,
+    "gpPracticeId": 6
+  },
+  {
+    "patientId": 37,
+    "gpPracticeId": 7
+  },
+  {
+    "patientId": 65,
+    "gpPracticeId": 10
+  },
+  {
+    "gpPracticeId": 7,
+    "patientId": 31
+  },
+  {
+    "gpPracticeId": 16,
+    "patientId": 113
+  },
+  {
+    "patientId": 130,
+    "gpPracticeId": 20
+  },
+  {
+    "gpPracticeId": 12,
+    "patientId": 74
+  },
+  {
+    "gpPracticeId": 21,
+    "patientId": 138
+  },
+  {
+    "patientId": 57,
+    "gpPracticeId": 9
+  },
+  {
+    "patientId": 56,
+    "gpPracticeId": 9
+  },
+  {
+    "patientId": 27,
+    "gpPracticeId": 6
+  },
+  {
+    "gpPracticeId": 13,
+    "patientId": 76
+  },
+  {
+    "patientId": 21,
+    "gpPracticeId": 6
+  },
+  {
+    "patientId": 78,
+    "gpPracticeId": 13
+  },
+  {
+    "gpPracticeId": 15,
+    "patientId": 102
+  },
+  {
+    "gpPracticeId": 4,
+    "patientId": 16
+  },
+  {
+    "patientId": 82,
+    "gpPracticeId": 13
+  },
+  {
+    "gpPracticeId": 4,
+    "patientId": 135
+  },
+  {
+    "gpPracticeId": 5,
+    "patientId": 119
+  },
+  {
+    "patientId": 71,
+    "gpPracticeId": 12
+  },
+  {
+    "gpPracticeId": 13,
+    "patientId": 86
+  },
+  {
+    "patientId": 91,
+    "gpPracticeId": 14
+  },
+  {
+    "patientId": 127,
+    "gpPracticeId": 20
+  },
+  {
+    "gpPracticeId": 10,
+    "patientId": 63
+  },
+  {
+    "patientId": 95,
+    "gpPracticeId": 14
+  },
+  {
+    "patientId": 88,
+    "gpPracticeId": 13
+  },
+  {
+    "patientId": 84,
+    "gpPracticeId": 13
+  },
+  {
+    "patientId": 10,
+    "gpPracticeId": 2
+  },
+  {
+    "patientId": 144,
+    "gpPracticeId": 21
+  },
+  {
+    "gpPracticeId": 16,
+    "patientId": 114
+  },
+  {
+    "patientId": 34,
+    "gpPracticeId": 7
+  },
+  {
+    "patientId": 40,
+    "gpPracticeId": 7
+  },
+  {
+    "patientId": 49,
+    "gpPracticeId": 9
+  },
+  {
+    "patientId": 9,
+    "gpPracticeId": 2
+  },
+  {
+    "patientId": 12,
+    "gpPracticeId": 18
+  },
+  {
+    "gpPracticeId": 10,
+    "patientId": 62
+  },
+  {
+    "patientId": 55,
+    "gpPracticeId": 9
+  },
+  {
+    "patientId": 45,
+    "gpPracticeId": 9
+  }
+]

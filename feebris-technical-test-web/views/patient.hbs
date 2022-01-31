@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+    <div class="container" style="padding:20px">
+        <div class="card card-body bg-light">
+            <h1>{{title}}: {{patient.firstName}} {{patient.lastName}}</h1>
+            <hr />
+            <ul>
+                {{#each patient.checkups}}
+                    <li>Checkup: <a href="/patients/{{this.patientId}}/checkups/{{this.id}}"><strong>{{this.createdDate}}</strong></a>
+                    {{#if this.meanSPO2}}
+                        SPO2: {{this.meanSPO2}}
+                    {{/if}}
+                    </li>
+                {{else}}
+                    <li><span><i>no checkups found for this patient</i></span></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

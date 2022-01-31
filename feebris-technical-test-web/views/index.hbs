@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+    <div class="container" style="padding:20px">
+        <div class="card card-body bg-light">
+            <h1>{{title}}</h1>
+            <hr />
+            <ul>
+                {{#each data}}
+                <li><strong>{{this.name}}</strong></li>
+                <ul>
+                    {{#each this.patients}}
+                        <li><a href="/patients/{{this.id}}">{{this.firstName}} {{this.lastName}}</a>
+                        GP practice(s): 
+                        {{#each this.gp_practices}}
+                            <span>{{this.name}}</span>{{#if @last}} {{else}}, {{/if}}
+                        {{else}}
+                            <span><i>not registered with a GP practice</i></span>
+                        {{/each}}
+                        </li>
+                    {{else}}
+                        <li><i>not registered with patients</i></li>
+                    {{/each}}
+                </ul>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
