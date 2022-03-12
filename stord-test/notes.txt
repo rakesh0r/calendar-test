@@ -1,0 +1,16 @@
+Prerequisites:
+
+docker
+node
+npm
+
+
+Application startup
+
+Run ./setup.sh
+
+it will start mongo docker process
+Then will install dependencies for apps, build client app, and start server app
+once this step is completed it will start express server i.e localhost:3000
+
+once we goto this localhost:3000, we will see input for url and submit button.

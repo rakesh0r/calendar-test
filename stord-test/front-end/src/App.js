@@ -33,10 +33,10 @@ function App() {
 
   return (
     <div className="App">
-      <input name="url" value={url} onChange={onChange} />
+      <input name="url" value={url} onChange={onChange} placeholder="Enter url to be shorten" />
       {error && <p className='error'>{error}</p>}
       {shortenUrl && <p>Generated url: {shortenUrl}</p>}
-      <button type='button' onClick={submitUrl}>Submit</button>
+      <button type='button' onClick={submitUrl}>Generate short url</button>
     </div>
   );
 }
